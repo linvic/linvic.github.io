@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>移动WEB学习笔记 | 陈焱林的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="像素基础、viewport、定制化移动web（媒体查询等）、移动web布局（flex弹性布局，css3）、交互优化（touch，tap替代click）、常见移动web问题（高清图片、一像素、弹性滚动、多行文本溢出、安卓bug）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="移动WEB学习笔记">
+<meta property="og:url" content="http://yoursite.com/2016/04/12/移动WEB学习笔记/index.html">
+<meta property="og:site_name" content="陈焱林的博客">
+<meta property="og:description" content="像素基础、viewport、定制化移动web（媒体查询等）、移动web布局（flex弹性布局，css3）、交互优化（touch，tap替代click）、常见移动web问题（高清图片、一像素、弹性滚动、多行文本溢出、安卓bug）">
+<meta property="og:image" content="http://7xsfux.com1.z0.glb.clouddn.com/2016041101.jpg">
+<meta property="og:image" content="http://7xsfux.com1.z0.glb.clouddn.com/2016041102.jpg">
+<meta property="og:image" content="http://7xsfux.com1.z0.glb.clouddn.com/2016041103.jpg">
+<meta property="og:updated_time" content="2016-04-12T14:33:06.680Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="移动WEB学习笔记">
+<meta name="twitter:description" content="像素基础、viewport、定制化移动web（媒体查询等）、移动web布局（flex弹性布局，css3）、交互优化（touch，tap替代click）、常见移动web问题（高清图片、一像素、弹性滚动、多行文本溢出、安卓bug）">
+<meta name="twitter:image" content="http://7xsfux.com1.z0.glb.clouddn.com/2016041101.jpg">
+  
+    <link rel="alternative" href="/atom.xml" title="陈焱林的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan style='display:none;' id='cnzz_stat_icon_1258379977'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1258379977' type='text/javascript'%3E%3C/script%3E"));</script>
+
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/img/me.png" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">linvic</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">陈焱林github博客</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/tags/随笔/">随笔</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/linvic" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="#" title="rss">rss</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/GitHub/" style="font-size: 20px;">GitHub</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/pages/" style="font-size: 10px;">pages</a> <a href="/tags/移动web/" style="font-size: 10px;">移动web</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+				
+				<section class="switch-part switch-part3">
+				
+					<div id="js-aboutme">南昌大学共青学院12级,前端开发爱好者,喜欢新鲜事物喜欢coding,期望在前端道路上大大的迈步!</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">linvic</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="/img/me.png" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">linvic</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">陈焱林github博客</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+					<li><a href="/tags/随笔/">随笔</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/linvic" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss">rss</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-移动WEB学习笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/12/移动WEB学习笔记/" class="article-date">
+  	<time datetime="2016-04-12T14:28:38.000Z" itemprop="datePublished">2016-04-12</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      移动WEB学习笔记
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/移动web/">移动web</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>像素基础、viewport、定制化移动web（媒体查询等）、移动web布局（flex弹性布局，css3）、交互优化（touch，tap替代click）、常见移动web问题（高清图片、一像素、弹性滚动、多行文本溢出、安卓bug）<br><a id="more"></a></p>
+<h1 id="第一部分-移动web基础知识"><a href="#第一部分-移动web基础知识" class="headerlink" title="第一部分 移动web基础知识"></a>第一部分 移动web基础知识</h1><ol>
+<li>像素<ul>
+<li>px:是逻辑像素，浏览器的抽象单位</li>
+<li>dp,pt:设备无关像素</li>
+<li>dpr:设备像素缩放比<br>1px=(dpr)²<em>dp<br>那么为什么iPhone5是320px</em>568px?<br>答：因为其dpr=2.<br>平面上：一个css像素等于4个物理像素。<br>纬度上：一个css像素等于2个物理像素。<br><img src="http://7xsfux.com1.z0.glb.clouddn.com/2016041101.jpg" alt=""><br><img src="http://7xsfux.com1.z0.glb.clouddn.com/2016041102.jpg" alt=""></li>
+</ul>
+</li>
+<li><p>Viewport视图<br>手机浏览器将页面渲染在一个980px（ios）的viewport中，然后进行缩放显示。<br>viewport Meta标签。<br><strong><meta name="viewport" content="name=value,name=value"></strong></p>
+<ul>
+<li>width:设置布局viewport的特定值(“device-width”)</li>
+<li>initial-scale:设置布局的初始缩放</li>
+<li>minimum-scale：最小缩放</li>
+<li>maximum-scale：最大缩放</li>
+<li>uesr-scalable：用户能否缩放<br>检验：布局viewport【document.body.clientWidth】<br>度量viewport【window.innerWidth】<br>移动web最佳viewport设置：<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=<span class="string">"viewport"</span> content=<span class="string">"width=device-width,initial-scale=1,uese-scalable=no"</span>&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>Viewport_coding移动web设计<br>方案一：根据设备的实际宽度来设计（常用）<br>手机宽 320就拿320px设计<br>方案二：1px=1dp<br>缩放0.5.根据设备的物理像素dp=抽象像素px来设计<br>1像素边框和高清图片都不需要额外处理。</p>
+<h1 id="第二部分-高效的移动web布局"><a href="#第二部分-高效的移动web布局" class="headerlink" title="第二部分 高效的移动web布局"></a>第二部分 高效的移动web布局</h1><p><strong>怎样让页面有良好自适应性？</strong><br>1.响应式布局<br>响应式设计<br>媒体查询语法：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">@<span class="function">media screen <span class="title">and</span> <span class="params">(max-width:<span class="number">1024</span>px)</span></span>&#123;</span><br><span class="line">    <span class="meta">#pagewrap&#123;</span></span><br><span class="line">        width:<span class="number">95.5</span>%;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">#content&#123;</span></span><br><span class="line">        width:<span class="number">62</span>%;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">#content .article .hr&#123;</span></span><br><span class="line">        width:<span class="number">66</span>%;</span><br><span class="line">        margin-left:<span class="number">34</span>%;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><img src="http://7xsfux.com1.z0.glb.clouddn.com/2016041103.jpg" alt=""></p>
+<ul>
+<li>设计点一：百分比布局~</li>
+<li>设计点二：弹性图片<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@<span class="function">madia screen <span class="title">and</span> <span class="params">(max-width:<span class="number">980</span>px)</span></span>&#123;</span><br><span class="line">    img&#123;</span><br><span class="line">        max-width:<span class="number">100</span>%;</span><br><span class="line">        height:<span class="keyword">auto</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>性能不是最优（产生一些冗余样式）——响应式权衡利弊——减少重复开发<br>2.Flex弹性盒子布局<br>举个板栗<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">.nav&#123;</span><br><span class="line">    overflow:hidden;</span><br><span class="line">    background:<span class="meta">#de7c3c;</span></span><br><span class="line">    padding:<span class="number">10</span>px;</span><br><span class="line">    display:-webkit-flex;<span class="comment">//标示使用flex弹性布局</span></span><br><span class="line">&#125;</span><br><span class="line">.nav .item&#123;</span><br><span class="line">    color:<span class="meta">#fddfa7;</span></span><br><span class="line">    padding:<span class="number">0</span> <span class="number">5</span>px;</span><br><span class="line">    text-align:center;</span><br><span class="line">    flex:<span class="number">1</span>;<span class="comment">//flex:num;弹性占比</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>题外普及：不定宽高的水平垂直居中。</p>
+<ul>
+<li>普通方案<br>position:absolute;<br>top:-50%;<br>left:-50%;<br>-webkit-transform:translate(-50%,-50%);</li>
+<li>flexbox方法<br>.parent{<br>justify-content:center;//子元素水平居中<br>align-items:center;//子元素垂直居中<br>display:-webkit-flex;<br>}<br>3.移动web高清图片处理<br>在移动web页面上渲染图片，为了避免图片产生模糊，图片的宽高应该应用物理像素单位渲染，急是100*100的图片，应该使用100dp*100dp。<br>width: (w_value/dpr)px;<br>height: (h_value/dpr)px;<br>4.一像素边框<br>同样是retina屏幕下的问题，根本原因：1px使用2dp渲染。<br>border:0.5px 仅限ios8<br>较为成熟的方法：<br><code>scaleY(.5)</code>缩放方式解决<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">.sidebar .folder li&#123;</span><br><span class="line">    /*border-bottom: 0.5px solid #d00;*/</span><br><span class="line">    padding: 8px 0 8px 15px;</span><br><span class="line">    color: #7c7c7c;</span><br><span class="line">    cursor: pointer;</span><br><span class="line">    position: relative;</span><br><span class="line">&#125;</span><br><span class="line">.folder li + li:before&#123;</span><br><span class="line">    position: absolute;</span><br><span class="line">    left: 0;</span><br><span class="line">    top: -1px;</span><br><span class="line">    content: '';</span><br><span class="line">    width: 100%;</span><br><span class="line">    height: 1px;</span><br><span class="line">    border-top 1px solid #ddd;</span><br><span class="line">    -webkit-transform: scaleY(0.5);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>5.相对单位<br>em：根据父节点的font-size为相对单位<br>rem：根据html的font-size为相对单位</p>
+<p>em在多层嵌套下，变得非常难以使用<br>rem更加能作为全局统一设置的度量单位。</p>
+<p><strong>rem基值</strong><br>为了适应各大手机屏幕<br>rem=screen.width/20;<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 默认320px</span></span><br><span class="line">html&#123;font-size: <span class="number">32</span>px;&#125;</span><br><span class="line"><span class="comment">// iphone 6</span></span><br><span class="line">@media (min-device-width: <span class="number">375</span>px)&#123;</span><br><span class="line">    html&#123;font-size:&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// iphone 6 plus</span></span><br><span class="line">@media (min-device-width: <span class="number">414</span>px)&#123;</span><br><span class="line">    html&#123;font-size: <span class="number">41.4</span>px;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>6.文本溢出<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 单行文本溢出</span></span><br><span class="line">.inaline&#123;</span><br><span class="line">    overflow: hidden;</span><br><span class="line">    white-space: nowrap;</span><br><span class="line">    text-overflow: ellipsis;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 多行文本溢出</span></span><br><span class="line">.intwoline &#123;</span><br><span class="line">    display -webkot-box !important;</span><br><span class="line">    overflow: hidden;</span><br><span class="line">    </span><br><span class="line">    text-overflow: ellipsis;</span><br><span class="line">    word-<span class="keyword">break</span>: <span class="keyword">break</span>-all;</span><br><span class="line">    </span><br><span class="line">    -webkit-box-orient: vertical;</span><br><span class="line">    -webkit-line-clamp: <span class="number">2</span>; <span class="comment">// 2是行数</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="第三部分-终端交互优化"><a href="#第三部分-终端交互优化" class="headerlink" title="第三部分 终端交互优化"></a>第三部分 终端交互优化</h1><p>在移动端没有hover事件，取而代之的是touch事件。</p>
+<h2 id="300毫秒的故事"><a href="#300毫秒的故事" class="headerlink" title="300毫秒的故事"></a>300毫秒的故事</h2><p>移动web页面上的click事件响应都要慢上300ms<br>移动设备访问的web页面都是pc上的页面。在默认的viewport（980px）的页面往往都是需要“双击”或者“单击”放大页面，来看清页面。而正是为了确认用户是否“双击”还是单击，safari需要个300ms的延迟来判断。而后来的iphone也一直援用这样的设计，而借鉴成功的iphone的android也沿用这样的设计。<br>于是300ms就成为了一道规范。</p>
+<h3 id="1-Tap点击基础事件"><a href="#1-Tap点击基础事件" class="headerlink" title="1.Tap点击基础事件"></a>1.Tap点击基础事件</h3><ul>
+<li>Tap“点透”Bug：例如页面有两层，那么点击蒙层下面的那层也会因为点击而被触发。<br>解决方案：1、添加中间层，让中间层接受穿透，然后隐藏。2、上下都使用Tap事件，不用click事件（但避免不了原生标签的click事件）3、改用Fastclick库。<h3 id="2-touch触摸事件"><a href="#2-touch触摸事件" class="headerlink" title="2.touch触摸事件"></a>2.touch触摸事件</h3><strong>触摸才是移动设备交互的核心事件</strong><br>touchstart:手指触摸屏幕触发（已有手指放屏幕上不会触发）<br>touchmove：手指在屏幕滑动，连续触发<br>touchend：手指离开屏幕触发<br><em>android4.4,4.0的bug：只触发touchstart、和一次touchmove，touchend不触发<br>解决：event.preventDefault();</em><br><strong>专有触摸属性：</strong><br>touches：跟踪触摸操作的touch对象数组<br>targetTouches：锁定事件目标的touch对象数组<br>changeTouches：上一次触摸改变的touch对象数组<br><strong>每个touch对象 包含属性</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">属性名</th>
+<th style="text-align:center">解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">clientX</td>
+<td style="text-align:center">触摸目标在视口中的x坐标</td>
+</tr>
+<tr>
+<td style="text-align:center">clientY</td>
+<td style="text-align:center">触摸目标在视口中的y坐标</td>
+</tr>
+<tr>
+<td style="text-align:center">identifier</td>
+<td style="text-align:center">标示触摸的唯一id</td>
+</tr>
+<tr>
+<td style="text-align:center">pageX</td>
+<td style="text-align:center">触摸目标在页面中的x坐标</td>
+</tr>
+<tr>
+<td style="text-align:center">pageY</td>
+<td style="text-align:center">触摸目标在页面中的y坐标</td>
+</tr>
+<tr>
+<td style="text-align:center">screenX</td>
+<td style="text-align:center">触摸目标在屏幕中的y坐标</td>
+</tr>
+<tr>
+<td style="text-align:center">screenY</td>
+<td style="text-align:center">触摸目标在屏幕中的y坐标</td>
+</tr>
+<tr>
+<td style="text-align:center">target</td>
+<td style="text-align:center">触摸目标的DOM节点目标</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;p id="desc"&gt;&lt;/p&gt;</span><br><span class="line">&lt;div id="touchPad" class="touchpad"&gt;触摸板&lt;/div&gt;</span><br><span class="line">&lt;div id="ball" class="ball"&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">var touchpad = document.querySelector('#touchPad'),</span><br><span class="line">    ball = document.querySelector('#ball'),</span><br><span class="line">    desc = document.querySelector('#desc');</span><br><span class="line">//获取touch的点（兼容mouse事件）</span><br><span class="line">var getTouchPos = function(e)&#123;</span><br><span class="line">    var touches = e.touches;</span><br><span class="line">    if(touches &amp;&amp; touches[0]) &#123;</span><br><span class="line">        return &#123;</span><br><span class="line">                x:touches[0].clientX,</span><br><span class="line">                y:touches[0].clientY</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;</span><br><span class="line">    return &#123;x:e.clientX,y:e.clientY&#125;;</span><br><span class="line">&#125;</span><br><span class="line">//获取两点之间的距离</span><br><span class="line">var getDist = function(p1,p2)&#123;</span><br><span class="line">    if(!p1 || !p2) return 0;</span><br><span class="line">    return Math.sqrt((p1.x-p2.x)*(p1.x-p2.x) + (p1.y-p2.y)*(p1.y-p2.y));</span><br><span class="line">&#125;</span><br><span class="line">//获取两点之间所成的角度</span><br><span class="line">var getAngle = function(p1,p2)&#123;</span><br><span class="line">    var r = Math.atan2(p2.y-p1.y,p2.x-p1.x);</span><br><span class="line">    var a = r * 180 / Math.PI;</span><br><span class="line">    return a;</span><br><span class="line">&#125;</span><br><span class="line">//获取swipe的方向</span><br><span class="line">var getSwipeDirection = function(p2,p1)&#123;</span><br><span class="line">    var dx = p2.x-p1.x;</span><br><span class="line">    var dy = -p2.y+p1.y;</span><br><span class="line">    var angle = Math.atan2(dy,dx)*180/Math.PI;</span><br><span class="line">    </span><br><span class="line">    if(angle &lt; 45 &amp;&amp; angle &gt;-45) return "right";</span><br><span class="line">    if(angle &gt;=45 &amp;&amp; angle &lt;135) return "top";</span><br><span class="line">    if(angle&gt;=135 || angle&lt;-135) return "left";</span><br><span class="line">    if(angle&gt;=-135&amp;&amp; angle&lt;=-45) return "bottom";</span><br><span class="line">&#125;</span><br><span class="line">//startEvtHandler记录开始时间和位置</span><br><span class="line">var startEvtHandler = function(e)&#123;</span><br><span class="line">    var pos = getTouchPos(e);</span><br><span class="line">    ball.style.left = pos.x + 'px';</span><br><span class="line">    ball.style.top  = pos.y + 'px';</span><br><span class="line">    ball.style.display = 'block';</span><br><span class="line">    </span><br><span class="line">    var touches = e.touches;</span><br><span class="line">    //touches为空 标示鼠标点击</span><br><span class="line">    if( !touches || touches.length ==1)&#123;</span><br><span class="line">        point_start = getTouchPos(e);</span><br><span class="line">        time_start = Date.now();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">var moveEvtHandler = function(e)&#123;</span><br><span class="line">    var pos = getTouchPos(e);</span><br><span class="line">    ball.style.left = pos.x + 'px';</span><br><span class="line">    ball.style.top  = pos.y + 'px';</span><br><span class="line">    point_end = getTouchPos(e);</span><br><span class="line">    e.preventDefault();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var endEvtHandler = function(e)&#123;</span><br><span class="line">    ball.style.display = 'none';</span><br><span class="line">    var time_end = Date.now();</span><br><span class="line">    </span><br><span class="line">    //判断距离和时间是否符合条件</span><br><span class="line">    if(getDist(point_start,point_end)&gt;SWIPE_DISTANCE &amp;&amp; time_start-time_end&lt;SWIPE_TIME)&#123;</span><br><span class="line">        var dir = getSwipeDirection(point_end,point_start);</span><br><span class="line">        touchPad.innerHTML = 'swipe' + dir;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//定义一些全局变量</span><br><span class="line">var SWIPE_DISTANCE = 30; //移动30px之后才认为seipe事件</span><br><span class="line">var SWIPE_TIME = 500; //swipe最大经历时间</span><br><span class="line">var point_start,</span><br><span class="line">    point_end,</span><br><span class="line">    time_start,</span><br><span class="line">    time_end;</span><br><span class="line">//判断触摸是PC还是移动设备</span><br><span class="line">var startEvt,moveEvt,endEvt;</span><br><span class="line">if("ontouchstart" in window)&#123;</span><br><span class="line">    startEvt="touchstart";</span><br><span class="line">    moveEvt="touchmove";</span><br><span class="line">    endEvt="touchend";</span><br><span class="line">&#125;else&#123;</span><br><span class="line">    startEvt="mousedown";</span><br><span class="line">    moveEvt="mousemove";</span><br><span class="line">    endEvt="mouseup";</span><br><span class="line">&#125;</span><br><span class="line">touchpad.addEventListener(startEvt,startEvtHandler);</span><br><span class="line">touchpad.addEventListener(moveEvt,moveEvtHandler);</span><br><span class="line">touchpad.addEventListener(endEvt,endEvtHandler);</span><br></pre></td></tr></table></figure>
+<p><strong>Android的BUG</strong>（4.0、4.1、4.4、5.0）：<br>Android只会触发一次touchstart，一次touchmove，touchend不触发<br>解决方法：<br><code>在touchmove中加入：event.preventDefault()</code><br>但是：event.preventDefault()会导致默认行为不发生（如scroll，导致页面不滚动）</p>
+<h3 id="3-弹性滚动"><a href="#3-弹性滚动" class="headerlink" title="3.弹性滚动"></a>3.弹性滚动</h3><p>概念：当客户端页面滚动到顶部或底部时，滚动条收缩并多滚动一定距离。通过这种缓冲反弹的效果，带给用户良好的体验。</p>
+<p>移动web页面也有这种能力，但是要考虑几种情况：<br>body层滚动：（系统特殊化处理）<br>    自带弹层滚动，overflow:hidden失效，GIF和定时器暂停<br>局部滚动：<br>    没有弹性滚动，没有滚动惯性，不流畅<br><strong>局部滚动开启弹性滚动的方法</strong><br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">body&#123;</span><br><span class="line">    overflow:scroll;</span><br><span class="line">    -webkit-overflow-scrolling:touch;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//注意Android不支持原生的弹性滚动！</span></span><br><span class="line"><span class="comment">//可借助三方库iScroll实现</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="4-下拉刷新"><a href="#4-下拉刷新" class="headerlink" title="4.下拉刷新"></a>4.下拉刷新</h3><p>顶端下拉一小点距离 页面弹性滚动向下</p>
+<h3 id="5-上拉加载"><a href="#5-上拉加载" class="headerlink" title="5.上拉加载"></a>5.上拉加载</h3><p>使用scroll事件！而不是touch事件（因为android有bug）</p>
+<p>总结：<br>像素基础、viewport、定制化移动web（媒体查询等）、移动web布局（flex弹性布局，css3）、交互优化（touch，tap替代click）、常见移动web问题（高清图片、一像素、弹性滚动、多行文本溢出、安卓bug）</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/04/01/利用giehub-pages-访问github其他项目下的静态页面/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">利用giehub pages 访问github其他项目下的静态页面</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="移动WEB学习笔记" data-title="移动WEB学习笔记" data-url="http://yoursite.com/2016/04/12/移动WEB学习笔记/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"linvic"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 linvic
+    	</div>
+      	<div class="footer-right">
+      		by <b style="color:#42A4FF">陈焱林</b> Email:674206994@qq.com
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
